@@ -152,14 +152,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 266348369}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 3
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_Constraints: 112
+  m_CollisionDetection: 2
 --- !u!65 &266348371
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -248,8 +248,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 807cc368933b142ff9cfa320fa6b0bec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 266348374}
+  bladeRigidBody: {fileID: 266348370}
+  blade: {fileID: 266348374}
   mainCamera: {fileID: 963194227}
+  bladeForce: 200
 --- !u!1 &422337844
 GameObject:
   m_ObjectHideFlags: 0
@@ -358,6 +360,7 @@ GameObject:
   - component: {fileID: 560639157}
   - component: {fileID: 560639156}
   - component: {fileID: 560639160}
+  - component: {fileID: 560639161}
   m_Layer: 0
   m_Name: Puck
   m_TagString: Untagged
@@ -456,7 +459,19 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
+--- !u!114 &560639161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560639155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5fd231a3fa144666be3e718257a5f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
